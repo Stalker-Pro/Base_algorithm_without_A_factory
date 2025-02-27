@@ -1,0 +1,15 @@
+{
+	"name": "oaip_without_fabric",
+	"version": "1.0.0",
+	"description": "cool project",
+	"main": "main.js",
+	"scripts": {
+		"compile:sass": "sass sass/_main.scss styles/style.css -w"
+	},
+	"author": "Andrew",
+	"license": "ISC",
+	"dependencies": {
+		"live-server": "^1.2.2",
+		"sass": "^1.85.1"
+	}
+}

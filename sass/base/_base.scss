@@ -1,0 +1,69 @@
+/* basic presset */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.7;
+	color: #777;
+	padding: 3rem;
+}
+
+.btn {
+	background-color: black;
+	color: white;
+	font-size: 3rem;
+	padding: 1rem;
+	border-radius: 3rem;
+	cursor: pointer;
+	transition: 0.2s;
+	box-shadow: 10px 5px 5px $color-grey-dark;
+
+	&:hover {
+		color: $color-grey-dark;
+		box-shadow: 5px 3px 3px $color-grey-dark;
+		transform: translateY(-2px);
+		&:active {
+			transform: translateY(0px);
+		}
+	}
+
+	&:not(:last-child) {
+		margin-right: 2rem;
+	}
+}
+
+///  БЛОК С ИЗОБРАЖЕНИЯМИ
+///
+.furniture-item {
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.5s;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.furniture-item img {
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 200px;
+}
