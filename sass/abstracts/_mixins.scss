@@ -1,0 +1,8 @@
+@mixin clearFix {
+	//Чтобы не было коллапса высоты (*height = 0*)
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
